@@ -69,6 +69,36 @@ plot "data/xeon/linear/seqscan/off-16-sync-3-32GB-4-17.data"      using 2:5 with
      "data/xeon/linear/seqscan/off-16-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/xeon/linear/seqscan/off-16-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear/seqscan/off-16-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
+set title 'cost estimate / linear\\_1 / eic=16' font 'Verdana Bold,12'
+set xrange[0.0143999884800092:100]
+set yrange[0.01:911769.58]
+set title 'linear\_1 / 16 / bitmapscan' font 'Verdana Bold,12'
+
+set ylabel 'cost estimate'
+
+plot "data/xeon/linear_1/bitmapscan/off-16-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
+     "data/xeon/linear_1/bitmapscan/off-16-sync-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/xeon/linear_1/bitmapscan/off-16-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/xeon/linear_1/bitmapscan/off-16-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/xeon/linear_1/bitmapscan/off-16-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+unset ylabel
+
+set title 'linear\_1 / indexscan / eic=16'
+
+plot "data/xeon/linear_1/indexscan/off-16-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
+     "data/xeon/linear_1/indexscan/off-16-sync-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/xeon/linear_1/indexscan/off-16-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/xeon/linear_1/indexscan/off-16-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/xeon/linear_1/indexscan/off-16-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'linear\_1 / seqscan / eic=16'
+
+plot "data/xeon/linear_1/seqscan/off-16-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
+     "data/xeon/linear_1/seqscan/off-16-sync-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/xeon/linear_1/seqscan/off-16-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/xeon/linear_1/seqscan/off-16-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/xeon/linear_1/seqscan/off-16-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'cost estimate / uniform / eic=16' font 'Verdana Bold,12'
 set xrange[0.0152999877600098:100]
 set yrange[0.01:5854806.76]
