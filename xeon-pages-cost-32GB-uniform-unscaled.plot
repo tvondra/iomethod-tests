@@ -7,7 +7,7 @@ set key top left
 
 set xlabel 'selectivity'
 
-set multiplot layout 4,4 rowsfirst
+set multiplot layout 4,3 rowsfirst
 set title 'cost estimate / uniform / eic=0' font 'Verdana Bold,12'
 set xrange[0.0152999877600098:100]
 set title 'uniform / 0 / bitmapscan' font 'Verdana Bold,12'
@@ -29,14 +29,6 @@ plot "data/xeon/uniform/indexscan/off-0-sync-3-32GB-4-17.data"      using 2:5 wi
      "data/xeon/uniform/indexscan/off-0-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/xeon/uniform/indexscan/off-0-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/uniform/indexscan/off-0-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'uniform / indexscan prefetch / eic=0'
-
-plot "data/xeon/uniform/indexscan/on-0-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/uniform/indexscan/on-0-sync-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/uniform/indexscan/on-0-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/uniform/indexscan/on-0-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/uniform/indexscan/on-0-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'uniform / seqscan / eic=0'
 
@@ -67,14 +59,6 @@ plot "data/xeon/uniform/indexscan/off-1-sync-3-32GB-4-17.data"      using 2:5 wi
      "data/xeon/uniform/indexscan/off-1-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/uniform/indexscan/off-1-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
 
-set title 'uniform / indexscan prefetch / eic=1'
-
-plot "data/xeon/uniform/indexscan/on-1-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/uniform/indexscan/on-1-sync-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/uniform/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/uniform/indexscan/on-1-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/uniform/indexscan/on-1-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
-
 set title 'uniform / seqscan / eic=1'
 
 plot "data/xeon/uniform/seqscan/off-1-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
@@ -104,14 +88,6 @@ plot "data/xeon/uniform/indexscan/off-16-sync-3-32GB-4-17.data"      using 2:5 w
      "data/xeon/uniform/indexscan/off-16-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/uniform/indexscan/off-16-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
 
-set title 'uniform / indexscan prefetch / eic=16'
-
-plot "data/xeon/uniform/indexscan/on-16-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/uniform/indexscan/on-16-sync-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/uniform/indexscan/on-16-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/uniform/indexscan/on-16-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/uniform/indexscan/on-16-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
-
 set title 'uniform / seqscan / eic=16'
 
 plot "data/xeon/uniform/seqscan/off-16-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
@@ -140,14 +116,6 @@ plot "data/xeon/uniform/indexscan/off-64-sync-3-32GB-4-17.data"      using 2:5 w
      "data/xeon/uniform/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/xeon/uniform/indexscan/off-64-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/uniform/indexscan/off-64-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'uniform / indexscan prefetch / eic=64'
-
-plot "data/xeon/uniform/indexscan/on-64-sync-3-32GB-4-17.data"      using 2:5 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/uniform/indexscan/on-64-sync-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/uniform/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/uniform/indexscan/on-64-worker-3-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/uniform/indexscan/on-64-worker-12-32GB-4-18.data"      using 2:5 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'uniform / seqscan / eic=64'
 

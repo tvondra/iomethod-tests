@@ -7,7 +7,7 @@ set key top left
 
 set xlabel 'selectivity'
 
-set multiplot layout 9,4 rowsfirst
+set multiplot layout 9,3 rowsfirst
 set title 'timing (warm) / cyclic / eic=1' font 'Verdana Bold,12'
 set xrange[0.0179999856000115:100]
 set yrange[0:1947.816]
@@ -30,14 +30,6 @@ plot "data/ryzen/cyclic/indexscan/off-1-sync-3-32GB-4-17.data"      using 2:4 wi
      "data/ryzen/cyclic/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/ryzen/cyclic/indexscan/off-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic/indexscan/off-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic / indexscan prefetch / eic=1'
-
-plot "data/ryzen/cyclic/indexscan/on-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
-     "data/ryzen/cyclic/indexscan/on-1-sync-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/ryzen/cyclic/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/ryzen/cyclic/indexscan/on-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/ryzen/cyclic/indexscan/on-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'cyclic / seqscan / eic=1'
 
@@ -69,14 +61,6 @@ plot "data/ryzen/cyclic_1/indexscan/off-1-sync-3-32GB-4-17.data"      using 2:4 
      "data/ryzen/cyclic_1/indexscan/off-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic_1/indexscan/off-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
-set title 'cyclic\_1 / indexscan prefetch / eic=1'
-
-plot "data/ryzen/cyclic_1/indexscan/on-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
-     "data/ryzen/cyclic_1/indexscan/on-1-sync-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/ryzen/cyclic_1/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/ryzen/cyclic_1/indexscan/on-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/ryzen/cyclic_1/indexscan/on-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
 set title 'cyclic\_1 / seqscan / eic=1'
 
 plot "data/ryzen/cyclic_1/seqscan/off-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
@@ -106,14 +90,6 @@ plot "data/ryzen/cyclic_10/indexscan/off-1-sync-3-32GB-4-17.data"      using 2:4
      "data/ryzen/cyclic_10/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/ryzen/cyclic_10/indexscan/off-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic_10/indexscan/off-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_10 / indexscan prefetch / eic=1'
-
-plot "data/ryzen/cyclic_10/indexscan/on-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
-     "data/ryzen/cyclic_10/indexscan/on-1-sync-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/ryzen/cyclic_10/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/ryzen/cyclic_10/indexscan/on-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/ryzen/cyclic_10/indexscan/on-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'cyclic\_10 / seqscan / eic=1'
 
@@ -145,14 +121,6 @@ plot "data/ryzen/linear/indexscan/off-1-sync-3-32GB-4-17.data"      using 2:4 wi
      "data/ryzen/linear/indexscan/off-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear/indexscan/off-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
-set title 'linear / indexscan prefetch / eic=1'
-
-plot "data/ryzen/linear/indexscan/on-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
-     "data/ryzen/linear/indexscan/on-1-sync-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/ryzen/linear/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/ryzen/linear/indexscan/on-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/ryzen/linear/indexscan/on-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
 set title 'linear / seqscan / eic=1'
 
 plot "data/ryzen/linear/seqscan/off-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
@@ -182,14 +150,6 @@ plot "data/ryzen/linear_1/indexscan/off-1-sync-3-32GB-4-17.data"      using 2:4 
      "data/ryzen/linear_1/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/ryzen/linear_1/indexscan/off-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_1/indexscan/off-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_1 / indexscan prefetch / eic=1'
-
-plot "data/ryzen/linear_1/indexscan/on-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
-     "data/ryzen/linear_1/indexscan/on-1-sync-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/ryzen/linear_1/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/ryzen/linear_1/indexscan/on-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/ryzen/linear_1/indexscan/on-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'linear\_1 / seqscan / eic=1'
 
@@ -221,14 +181,6 @@ plot "data/ryzen/linear_10/indexscan/off-1-sync-3-32GB-4-17.data"      using 2:4
      "data/ryzen/linear_10/indexscan/off-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_10/indexscan/off-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
-set title 'linear\_10 / indexscan prefetch / eic=1'
-
-plot "data/ryzen/linear_10/indexscan/on-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
-     "data/ryzen/linear_10/indexscan/on-1-sync-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/ryzen/linear_10/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/ryzen/linear_10/indexscan/on-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/ryzen/linear_10/indexscan/on-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
 set title 'linear\_10 / seqscan / eic=1'
 
 plot "data/ryzen/linear_10/seqscan/off-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
@@ -258,14 +210,6 @@ plot "data/ryzen/uniform/indexscan/off-1-sync-3-32GB-4-17.data"      using 2:4 w
      "data/ryzen/uniform/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/ryzen/uniform/indexscan/off-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/uniform/indexscan/off-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'uniform / indexscan prefetch / eic=1'
-
-plot "data/ryzen/uniform/indexscan/on-1-sync-3-32GB-4-17.data"      using 2:4 with points pt 7 ps 0.75 title "17", \
-     "data/ryzen/uniform/indexscan/on-1-sync-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/ryzen/uniform/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/ryzen/uniform/indexscan/on-1-worker-3-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/ryzen/uniform/indexscan/on-1-worker-12-32GB-4-18.data"      using 2:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'uniform / seqscan / eic=1'
 
