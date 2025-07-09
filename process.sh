@@ -82,7 +82,8 @@ EOF
 SELECT DISTINCT eic FROM results_${m} WHERE shared_buffers = '$sb' ORDER BY eic
 EOF
 
-		for sel in rows pages; do
+		#for sel in rows pages; do
+		for sel in rows; do
 
 			if [ "$sel" == "rows" ]; then
 				D="100.0 * rows / total_rows"
@@ -175,7 +176,8 @@ EOF
 SELECT DISTINCT eic FROM results_${m} WHERE shared_buffers = '$sb' ORDER BY eic
 EOF
 
-		for sel in rows pages; do
+		#for sel in rows pages; do
+		for sel in rows; do
 
 			if [ "$sel" == "rows" ]; then
 				D="100.0 * rows / total_rows"
