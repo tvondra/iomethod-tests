@@ -38,7 +38,7 @@ plot "data/ryzen/cyclic/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 with
      "data/ryzen/cyclic/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.0007:100]
+set xrange[0.00036:100]
 set title 'cyclic\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -96,7 +96,7 @@ plot "data/ryzen/cyclic_10/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 w
      "data/ryzen/cyclic_10/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic_10/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_25 / eic=1' font 'Verdana Bold,12'
-set xrange[0.00045:100]
+set xrange[0.00044:100]
 set title 'cyclic\_25 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -154,7 +154,7 @@ plot "data/ryzen/linear/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 with
      "data/ryzen/linear/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.00056:100]
+set xrange[0.00049:100]
 set title 'linear\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -241,7 +241,7 @@ plot "data/ryzen/linear_25/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 w
      "data/ryzen/linear_25/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_25/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / uniform / eic=1' font 'Verdana Bold,12'
-set xrange[0.0008:100]
+set xrange[0.00067:100]
 set title 'uniform / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'

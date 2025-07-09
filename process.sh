@@ -32,7 +32,7 @@ for m in $MACHINES; do
 
 	mkdir data/$m
 
-	for sb in 32GB; do
+	for sb in 4GB 32GB; do
 
 		sqlite3 scans.db > tmp.data <<EOF
 .mode tab
@@ -92,7 +92,8 @@ EOF
 				D="100.0 * pages / total_pages"
 			fi
 
-			for cache in cold warm cost; do
+			#for cache in cold warm cost; do
+			for cache in cold warm; do
 
 				if [ "$cache" == "cold" ]; then
 					LABEL="timing (cold)"
@@ -184,7 +185,8 @@ EOF
 				D="100.0 * pages / total_pages"
 			fi
 
-			for cache in cold warm cost; do
+			#for cache in cold warm cost; do
+			for cache in cold warm; do
 
 				if [ "$cache" == "cold" ]; then
 					LABEL="timing (cold)"
