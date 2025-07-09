@@ -130,8 +130,8 @@ plot "data/xeon/linear_1/seqscan/off-16-sync-3-32GB-4-17.data"      using 1:3 wi
      "data/xeon/linear_1/seqscan/off-16-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear_1/seqscan/off-16-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_10 / eic=16' font 'Verdana Bold,12'
-set xrange[0.0005:100]
-set yrange[0.01:62420.545]
+set xrange[0.0003:100]
+set yrange[0.01:68171.11]
 set title 'linear\_10 / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'

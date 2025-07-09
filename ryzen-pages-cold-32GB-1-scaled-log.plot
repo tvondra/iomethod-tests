@@ -70,7 +70,7 @@ plot "data/ryzen/cyclic_1/seqscan/off-1-sync-3-32GB-4-17.data"      using 2:3 wi
      "data/ryzen/cyclic_1/seqscan/off-1-worker-3-32GB-4-18.data"      using 2:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 2:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_10 / eic=1' font 'Verdana Bold,12'
-set xrange[0.0082799933760053:100]
+set xrange[0.00575999539200369:100]
 set yrange[0.01:25741.095]
 set title 'cyclic\_10 / 1 / bitmapscan' font 'Verdana Bold,12'
 
