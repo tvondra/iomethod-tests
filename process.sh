@@ -117,7 +117,7 @@ EOF
 
 					while IFS= read -r dataset; do
 
-						ds=$(echo $dataset | sed 's/_/\\_/')
+						ds=$(echo $dataset | sed 's/_/\\\\_/')
 
 						sed "s/MACHINE/$m/" plot.template | sed "s/DS/$ds/" | sed "s/DATASET/$dataset/" | sed "s/SEL/$sel/" | sed "s/CACHE/$cache/" | sed "s/SCALE/$scale/" | sed "s/EIC/$eic/" | sed "s/BUFFERS/$sb/" | sed "s/SCALE/$scale/" > $m-$sel-$cache-$sb-$dataset-$scale.plot
 						sed "s/MACHINE/$m/" plot-log.template | sed "s/DS/$ds/" | sed "s/DATASET/$dataset/" | sed "s/SEL/$sel/" | sed "s/CACHE/$cache/" | sed "s/SCALE/$scale/" | sed "s/EIC/$eic/" | sed "s/BUFFERS/$sb/" | sed "s/SCALE/$scale/" > $m-$sel-$cache-$sb-$dataset-$scale-log.plot
