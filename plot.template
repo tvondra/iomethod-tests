@@ -1,4 +1,4 @@
-set terminal pdfcairo size 16,16 enhanced font 'Verdana,12'
+set terminal pdfcairo size 21,16 enhanced font 'Verdana,12'
 set output 'MACHINE-SEL-CACHE-BUFFERS-DATASET-SCALE.pdf'
 
 set log x
