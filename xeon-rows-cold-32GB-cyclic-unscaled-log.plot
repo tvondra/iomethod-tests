@@ -1,4 +1,4 @@
-set terminal pdfcairo size 16,16 enhanced font 'Verdana,12'
+set terminal pdfcairo size 21,16 enhanced font 'Verdana,12'
 set output 'xeon-rows-cold-32GB-cyclic-unscaled-log.pdf'
 
 set log x
@@ -8,7 +8,7 @@ set key bottom right
 
 set xlabel 'selectivity'
 
-set multiplot layout 4,3 rowsfirst
+set multiplot layout 4,4 rowsfirst
 set title 'timing (cold) / cyclic / eic=0' font 'Verdana Bold,12'
 set xrange[0.001:100]
 set title 'cyclic / 0 / bitmapscan' font 'Verdana Bold,12'
@@ -30,6 +30,14 @@ plot "data/xeon/cyclic/indexscan/off-0-sync-3-32GB-4-17.data"      using 1:3 wit
      "data/xeon/cyclic/indexscan/off-0-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/xeon/cyclic/indexscan/off-0-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic/indexscan/off-0-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'cyclic / indexscan prefetch / eic=0'
+
+plot "data/xeon/cyclic/indexscan/on-0-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/xeon/cyclic/indexscan/on-0-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/xeon/cyclic/indexscan/on-0-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/xeon/cyclic/indexscan/on-0-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/xeon/cyclic/indexscan/on-0-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'cyclic / seqscan / eic=0'
 
@@ -60,6 +68,14 @@ plot "data/xeon/cyclic/indexscan/off-1-sync-3-32GB-4-17.data"      using 1:3 wit
      "data/xeon/cyclic/indexscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic/indexscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 
+set title 'cyclic / indexscan prefetch / eic=1'
+
+plot "data/xeon/cyclic/indexscan/on-1-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/xeon/cyclic/indexscan/on-1-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/xeon/cyclic/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/xeon/cyclic/indexscan/on-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/xeon/cyclic/indexscan/on-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
 set title 'cyclic / seqscan / eic=1'
 
 plot "data/xeon/cyclic/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
@@ -89,6 +105,14 @@ plot "data/xeon/cyclic/indexscan/off-16-sync-3-32GB-4-17.data"      using 1:3 wi
      "data/xeon/cyclic/indexscan/off-16-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic/indexscan/off-16-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 
+set title 'cyclic / indexscan prefetch / eic=16'
+
+plot "data/xeon/cyclic/indexscan/on-16-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/xeon/cyclic/indexscan/on-16-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/xeon/cyclic/indexscan/on-16-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/xeon/cyclic/indexscan/on-16-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/xeon/cyclic/indexscan/on-16-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
 set title 'cyclic / seqscan / eic=16'
 
 plot "data/xeon/cyclic/seqscan/off-16-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
@@ -117,6 +141,14 @@ plot "data/xeon/cyclic/indexscan/off-64-sync-3-32GB-4-17.data"      using 1:3 wi
      "data/xeon/cyclic/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/xeon/cyclic/indexscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic/indexscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'cyclic / indexscan prefetch / eic=64'
+
+plot "data/xeon/cyclic/indexscan/on-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/xeon/cyclic/indexscan/on-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/xeon/cyclic/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/xeon/cyclic/indexscan/on-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/xeon/cyclic/indexscan/on-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'cyclic / seqscan / eic=64'
 
