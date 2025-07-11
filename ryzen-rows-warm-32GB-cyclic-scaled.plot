@@ -9,8 +9,8 @@ set xlabel 'selectivity'
 
 set multiplot layout 4,3 rowsfirst
 set title 'timing (warm) / cyclic / eic=0' font 'Verdana Bold,12'
-set xrange[0.001:100]
-set yrange[0:3735.083]
+set xrange[0.00099999920000064:100]
+set yrange[0:1947.104]
 set title 'cyclic / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -39,8 +39,8 @@ plot "data/ryzen/cyclic/seqscan/off-0-sync-3-32GB-4-17.data"      using 1:4 with
      "data/ryzen/cyclic/seqscan/off-0-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic / eic=1' font 'Verdana Bold,12'
-set xrange[0.001:100]
-set yrange[0:3735.083]
+set xrange[0.00099999920000064:100]
+set yrange[0:1947.104]
 set title 'cyclic / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -69,8 +69,8 @@ plot "data/ryzen/cyclic/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with
      "data/ryzen/cyclic/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic / eic=16' font 'Verdana Bold,12'
-set xrange[0.001:100]
-set yrange[0:3735.083]
+set xrange[0.00099999920000064:100]
+set yrange[0:1947.104]
 set title 'cyclic / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -99,8 +99,8 @@ plot "data/ryzen/cyclic/seqscan/off-16-sync-3-32GB-4-17.data"      using 1:4 wit
      "data/ryzen/cyclic/seqscan/off-16-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic/seqscan/off-16-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic / eic=64' font 'Verdana Bold,12'
-set xrange[0.001:100]
-set yrange[0:3735.083]
+set xrange[0.00099999920000064:100]
+set yrange[0:1947.104]
 set title 'cyclic / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
