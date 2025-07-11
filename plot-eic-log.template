@@ -8,4 +8,4 @@ set key bottom right
 
 set xlabel 'selectivity'
 
-set multiplot layout 9,3 rowsfirst
+set multiplot layout 9,4 rowsfirst
