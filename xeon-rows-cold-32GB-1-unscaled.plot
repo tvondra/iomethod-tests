@@ -9,7 +9,7 @@ set xlabel 'selectivity'
 
 set multiplot layout 9,3 rowsfirst
 set title 'timing (cold) / cyclic / eic=1' font 'Verdana Bold,12'
-set xrange[0.101:100]
+set xrange[0.1:100]
 set title 'cyclic / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -38,7 +38,7 @@ plot "data/xeon/cyclic/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 with 
      "data/xeon/cyclic/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.09872:100]
+set xrange[0.08862:100]
 set title 'cyclic\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -67,7 +67,7 @@ plot "data/xeon/cyclic_1/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 wit
      "data/xeon/cyclic_1/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_10 / eic=1' font 'Verdana Bold,12'
-set xrange[0.07523:100]
+set xrange[0.05342:100]
 set title 'cyclic\_10 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -96,7 +96,7 @@ plot "data/xeon/cyclic_10/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 wi
      "data/xeon/cyclic_10/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic_10/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_25 / eic=1' font 'Verdana Bold,12'
-set xrange[0.07914:100]
+set xrange[0.05159:100]
 set title 'cyclic\_25 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -125,7 +125,7 @@ plot "data/xeon/cyclic_25/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 wi
      "data/xeon/cyclic_25/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic_25/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear / eic=1' font 'Verdana Bold,12'
-set xrange[0.10001:100]
+set xrange[0.1:100]
 set title 'linear / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -154,7 +154,7 @@ plot "data/xeon/linear/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 with 
      "data/xeon/linear/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.09978:100]
+set xrange[0.0781:100]
 set title 'linear\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -183,7 +183,7 @@ plot "data/xeon/linear_1/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 wit
      "data/xeon/linear_1/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_10 / eic=1' font 'Verdana Bold,12'
-set xrange[0.15012:100]
+set xrange[0.05782:100]
 set title 'linear\_10 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -212,7 +212,7 @@ plot "data/xeon/linear_10/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 wi
      "data/xeon/linear_10/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear_10/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_25 / eic=1' font 'Verdana Bold,12'
-set xrange[0.05104:100]
+set xrange[0.05061:100]
 set title 'linear\_25 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -241,7 +241,7 @@ plot "data/xeon/linear_25/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:3 wi
      "data/xeon/linear_25/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear_25/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / uniform / eic=1' font 'Verdana Bold,12'
-set xrange[0.09953:100]
+set xrange[0.09733:100]
 set title 'uniform / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
