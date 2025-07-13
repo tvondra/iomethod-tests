@@ -120,6 +120,43 @@ plot "data/ryzen/cyclic_10/seqscan/off-0-sync-3-4GB-4-17.data"      using 1:3 wi
      "data/ryzen/cyclic_10/seqscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/ryzen/cyclic_10/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic_10/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+set title 'timing (cold) / cyclic\\_25 / eic=0' font 'Verdana Bold,12'
+set xrange[0.000349999720000224:100]
+set title 'cyclic\_25 / 0 / bitmapscan' font 'Verdana Bold,12'
+
+set ylabel 'timing (cold)'
+
+plot "data/ryzen/cyclic_25/bitmapscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/ryzen/cyclic_25/bitmapscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/ryzen/cyclic_25/bitmapscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/ryzen/cyclic_25/bitmapscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/ryzen/cyclic_25/bitmapscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+unset ylabel
+
+set title 'cyclic\_25 / indexscan / eic=0'
+
+plot "data/ryzen/cyclic_25/indexscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/ryzen/cyclic_25/indexscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/ryzen/cyclic_25/indexscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/ryzen/cyclic_25/indexscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/ryzen/cyclic_25/indexscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'cyclic\_25 / indexscan prefetch / eic=0'
+
+plot "data/ryzen/cyclic_25/indexscan/on-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/ryzen/cyclic_25/indexscan/on-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/ryzen/cyclic_25/indexscan/on-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/ryzen/cyclic_25/indexscan/on-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/ryzen/cyclic_25/indexscan/on-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'cyclic\_25 / seqscan / eic=0'
+
+plot "data/ryzen/cyclic_25/seqscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/ryzen/cyclic_25/seqscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/ryzen/cyclic_25/seqscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/ryzen/cyclic_25/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/ryzen/cyclic_25/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear / eic=0' font 'Verdana Bold,12'
 set xrange[0.000989999208000634:100]
 set title 'linear / 0 / bitmapscan' font 'Verdana Bold,12'
@@ -231,6 +268,43 @@ plot "data/ryzen/linear_10/seqscan/off-0-sync-3-4GB-4-17.data"      using 1:3 wi
      "data/ryzen/linear_10/seqscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/ryzen/linear_10/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_10/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+set title 'timing (cold) / linear\\_25 / eic=0' font 'Verdana Bold,12'
+set xrange[0.000369999704000237:100]
+set title 'linear\_25 / 0 / bitmapscan' font 'Verdana Bold,12'
+
+set ylabel 'timing (cold)'
+
+plot "data/ryzen/linear_25/bitmapscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/ryzen/linear_25/bitmapscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/ryzen/linear_25/bitmapscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/ryzen/linear_25/bitmapscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/ryzen/linear_25/bitmapscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+unset ylabel
+
+set title 'linear\_25 / indexscan / eic=0'
+
+plot "data/ryzen/linear_25/indexscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/ryzen/linear_25/indexscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/ryzen/linear_25/indexscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/ryzen/linear_25/indexscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/ryzen/linear_25/indexscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'linear\_25 / indexscan prefetch / eic=0'
+
+plot "data/ryzen/linear_25/indexscan/on-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/ryzen/linear_25/indexscan/on-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/ryzen/linear_25/indexscan/on-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/ryzen/linear_25/indexscan/on-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/ryzen/linear_25/indexscan/on-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'linear\_25 / seqscan / eic=0'
+
+plot "data/ryzen/linear_25/seqscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/ryzen/linear_25/seqscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/ryzen/linear_25/seqscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/ryzen/linear_25/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/ryzen/linear_25/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / uniform / eic=0' font 'Verdana Bold,12'
 set xrange[0.00073:100]
 set title 'uniform / 0 / bitmapscan' font 'Verdana Bold,12'

@@ -195,7 +195,7 @@ plot "data/xeon/linear/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with 
      "data/xeon/linear/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.0781:100]
+set xrange[0.07112:100]
 set title 'linear\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -232,7 +232,7 @@ plot "data/xeon/linear_1/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 wit
      "data/xeon/linear_1/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_10 / eic=1' font 'Verdana Bold,12'
-set xrange[0.05782:100]
+set xrange[0.05132:100]
 set title 'linear\_10 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
