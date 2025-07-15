@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-MACHINES="ryzen xeon"
+MACHINES="d16_premium_ssd"
 
 rm -Rf data
 mkdir data
@@ -9,20 +9,17 @@ rm -f scans.db
 rm -f *.pdf *.plot
 
 sqlite3 scans.db <<EOF
-create table results_ryzen (seq int, cnt int, dataset text, scan text, prefetch text, eic int, version int, io_method text, io_workers int, shared_buffers text, random_page_cost text, start_val int, end_val int, optimal text, total_rows int, rows int, total_pages int, pages int, cost numeric, timing_cold numeric, timing_warm numeric);
-create table results_xeon (seq int, cnt int, dataset text, scan text, prefetch text, eic int, version int, io_method text, io_workers int, shared_buffers text, random_page_cost text, start_val int, end_val int, optimal text, total_rows int, rows int, total_pages int, pages int, cost numeric, timing_cold numeric, timing_warm numeric);
+create table results_d16_premium_ssd (seq int, cnt int, dataset text, scan text, prefetch text, eic int, version int, io_method text, io_workers int, shared_buffers text, random_page_cost text, start_val int, end_val int, optimal text, total_rows int, rows int, total_pages int, pages int, cost numeric, timing_cold numeric, timing_warm numeric);
 EOF
 
 sqlite3 scans.db <<EOF
 .mode csv
 .separator ' '
-.import results-ryzen.csv results_ryzen
-.import results-xeon.csv results_xeon
+.import results.csv results_d16_premium_ssd
 EOF
 
 sqlite3 scans.db <<EOF
-create index idx1 on results_ryzen (dataset,scan,prefetch,eic,io_method,io_workers,shared_buffers,random_page_cost);
-create index idx2 on results_xeon (dataset,scan,prefetch,eic,io_method,io_workers,shared_buffers,random_page_cost);
+create index idx1 on results_d16_premium_ssd (dataset,scan,prefetch,eic,io_method,io_workers,shared_buffers,random_page_cost);
 analyze;
 EOF
 
