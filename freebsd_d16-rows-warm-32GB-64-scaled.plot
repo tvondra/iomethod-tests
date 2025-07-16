@@ -39,8 +39,8 @@ plot "data/freebsd_d16/cyclic/seqscan/off-64-sync-3-32GB-4-17.data"      using 1
      "data/freebsd_d16/cyclic/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_1 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000769999384000493:100]
-set yrange[0:4006.612]
+set xrange[0.000599999520000384:100]
+set yrange[0:20209.27]
 set title 'cyclic\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -70,7 +70,7 @@ plot "data/freebsd_d16/cyclic_1/seqscan/off-64-sync-3-32GB-4-17.data"      using
      "data/freebsd_d16/cyclic_1/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_10 / eic=64' font 'Verdana Bold,12'
 set xrange[0.000459999632000294:100]
-set yrange[0:6331.169]
+set yrange[0:25041.208]
 set title 'cyclic\_10 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -160,7 +160,7 @@ plot "data/freebsd_d16/linear/seqscan/off-64-sync-3-32GB-4-17.data"      using 1
      "data/freebsd_d16/linear/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_1 / eic=64' font 'Verdana Bold,12'
 set xrange[0.000659999472000422:100]
-set yrange[0:7370.601]
+set yrange[0:20264.164]
 set title 'linear\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -189,8 +189,8 @@ plot "data/freebsd_d16/linear_1/seqscan/off-64-sync-3-32GB-4-17.data"      using
      "data/freebsd_d16/linear_1/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/linear_1/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_10 / eic=64' font 'Verdana Bold,12'
-set xrange[0.00049999960000032:100]
-set yrange[0:6289.814]
+set xrange[0.000429999656000275:100]
+set yrange[0:24907.797]
 set title 'linear\_10 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
