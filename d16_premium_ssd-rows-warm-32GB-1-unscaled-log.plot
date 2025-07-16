@@ -39,7 +39,7 @@ plot "data/d16_premium_ssd/cyclic/seqscan/off-1-sync-3-32GB-4-17.data"      usin
      "data/d16_premium_ssd/cyclic/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/cyclic/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000440006160086241:100]
+set xrange[0.000530007420103881:100]
 set title 'cyclic\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -68,7 +68,7 @@ plot "data/d16_premium_ssd/cyclic_1/seqscan/off-1-sync-3-32GB-4-17.data"      us
      "data/d16_premium_ssd/cyclic_1/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/cyclic_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear / eic=1' font 'Verdana Bold,12'
-set xrange[0.000989999208000634:100]
+set xrange[0.00099999920000064:100]
 set title 'linear / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -97,7 +97,7 @@ plot "data/d16_premium_ssd/linear/seqscan/off-1-sync-3-32GB-4-17.data"      usin
      "data/d16_premium_ssd/linear/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000569999544000365:100]
+set xrange[0.00049999960000032:100]
 set title 'linear\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -126,7 +126,7 @@ plot "data/d16_premium_ssd/linear_1/seqscan/off-1-sync-3-32GB-4-17.data"      us
      "data/d16_premium_ssd/linear_1/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / uniform / eic=1' font 'Verdana Bold,12'
-set xrange[0.000730010220143082:100]
+set xrange[0.000790011060154842:100]
 set title 'uniform / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'

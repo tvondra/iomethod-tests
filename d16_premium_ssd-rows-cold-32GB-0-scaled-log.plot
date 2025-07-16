@@ -11,7 +11,7 @@ set xlabel 'selectivity'
 set multiplot layout 9,3 rowsfirst
 set title 'timing (cold) / cyclic / eic=0' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0.01:30529.075]
+set yrange[0.01:30908.904]
 set title 'cyclic / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -40,8 +40,8 @@ plot "data/d16_premium_ssd/cyclic/seqscan/off-0-sync-3-32GB-4-17.data"      usin
      "data/d16_premium_ssd/cyclic/seqscan/off-0-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/cyclic/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_1 / eic=0' font 'Verdana Bold,12'
-set xrange[0.000440006160086241:100]
-set yrange[0.01:31059.245]
+set xrange[0.000530007420103881:100]
+set yrange[0.01:31490.004]
 set title 'cyclic\_1 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -70,8 +70,8 @@ plot "data/d16_premium_ssd/cyclic_1/seqscan/off-0-sync-3-32GB-4-17.data"      us
      "data/d16_premium_ssd/cyclic_1/seqscan/off-0-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/cyclic_1/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear / eic=0' font 'Verdana Bold,12'
-set xrange[0.000989999208000634:100]
-set yrange[0.01:28619.449]
+set xrange[0.00099999920000064:100]
+set yrange[0.01:29080.149]
 set title 'linear / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -100,8 +100,8 @@ plot "data/d16_premium_ssd/linear/seqscan/off-0-sync-3-32GB-4-17.data"      usin
      "data/d16_premium_ssd/linear/seqscan/off-0-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_1 / eic=0' font 'Verdana Bold,12'
-set xrange[0.000569999544000365:100]
-set yrange[0.01:41120.742]
+set xrange[0.00049999960000032:100]
+set yrange[0.01:40855.161]
 set title 'linear\_1 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -130,8 +130,8 @@ plot "data/d16_premium_ssd/linear_1/seqscan/off-0-sync-3-32GB-4-17.data"      us
      "data/d16_premium_ssd/linear_1/seqscan/off-0-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear_1/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / uniform / eic=0' font 'Verdana Bold,12'
-set xrange[0.000730010220143082:100]
-set yrange[0.01:41098.108]
+set xrange[0.000790011060154842:100]
+set yrange[0.01:41036.08]
 set title 'uniform / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
