@@ -9,7 +9,7 @@ set xlabel 'selectivity'
 
 set multiplot layout 4,4 rowsfirst
 set title 'timing (warm) / linear\\_25 / eic=0' font 'Verdana Bold,12'
-set xrange[0.000369999704000237:100]
+set xrange[0.000399999680000256:100]
 set title 'linear\_25 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -46,7 +46,7 @@ plot "data/ryzen/linear_25/seqscan/off-0-sync-3-4GB-4-17.data"      using 1:4 wi
      "data/ryzen/linear_25/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_25/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_25 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000369999704000237:100]
+set xrange[0.000399999680000256:100]
 set title 'linear\_25 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -83,7 +83,7 @@ plot "data/ryzen/linear_25/seqscan/off-1-sync-3-4GB-4-17.data"      using 1:4 wi
      "data/ryzen/linear_25/seqscan/off-1-worker-3-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_25/seqscan/off-1-worker-12-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_25 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000369999704000237:100]
+set xrange[0.000399999680000256:100]
 set title 'linear\_25 / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -120,7 +120,7 @@ plot "data/ryzen/linear_25/seqscan/off-16-sync-3-4GB-4-17.data"      using 1:4 w
      "data/ryzen/linear_25/seqscan/off-16-worker-3-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_25/seqscan/off-16-worker-12-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000369999704000237:100]
+set xrange[0.000399999680000256:100]
 set title 'linear\_25 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'

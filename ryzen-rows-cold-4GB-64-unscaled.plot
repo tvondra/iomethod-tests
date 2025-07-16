@@ -46,7 +46,7 @@ plot "data/ryzen/cyclic/seqscan/off-64-sync-3-4GB-4-17.data"      using 1:3 with
      "data/ryzen/cyclic/seqscan/off-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic/seqscan/off-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_1 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000569999544000365:100]
+set xrange[0.000509999592000326:100]
 set title 'cyclic\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -83,7 +83,7 @@ plot "data/ryzen/cyclic_1/seqscan/off-64-sync-3-4GB-4-17.data"      using 1:3 wi
      "data/ryzen/cyclic_1/seqscan/off-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic_1/seqscan/off-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_10 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000419999664000269:100]
+set xrange[0.000409999672000262:100]
 set title 'cyclic\_10 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -120,7 +120,7 @@ plot "data/ryzen/cyclic_10/seqscan/off-64-sync-3-4GB-4-17.data"      using 1:3 w
      "data/ryzen/cyclic_10/seqscan/off-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/cyclic_10/seqscan/off-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000349999720000224:100]
+set xrange[0.000429999656000275:100]
 set title 'cyclic\_25 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -194,7 +194,7 @@ plot "data/ryzen/linear/seqscan/off-64-sync-3-4GB-4-17.data"      using 1:3 with
      "data/ryzen/linear/seqscan/off-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear/seqscan/off-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_1 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000489999608000314:100]
+set xrange[0.000549999560000352:100]
 set title 'linear\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -231,7 +231,7 @@ plot "data/ryzen/linear_1/seqscan/off-64-sync-3-4GB-4-17.data"      using 1:3 wi
      "data/ryzen/linear_1/seqscan/off-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_1/seqscan/off-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_10 / eic=64' font 'Verdana Bold,12'
-set xrange[0.00039:100]
+set xrange[0.000419999664000269:100]
 set title 'linear\_10 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -268,7 +268,7 @@ plot "data/ryzen/linear_10/seqscan/off-64-sync-3-4GB-4-17.data"      using 1:3 w
      "data/ryzen/linear_10/seqscan/off-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_10/seqscan/off-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000369999704000237:100]
+set xrange[0.000399999680000256:100]
 set title 'linear\_25 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -305,7 +305,7 @@ plot "data/ryzen/linear_25/seqscan/off-64-sync-3-4GB-4-17.data"      using 1:3 w
      "data/ryzen/linear_25/seqscan/off-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen/linear_25/seqscan/off-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / uniform / eic=64' font 'Verdana Bold,12'
-set xrange[0.00073:100]
+set xrange[0.000729999416000467:100]
 set title 'uniform / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
