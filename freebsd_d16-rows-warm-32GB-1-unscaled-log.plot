@@ -38,93 +38,6 @@ plot "data/freebsd_d16/cyclic/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:
      "data/freebsd_d16/cyclic/seqscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/freebsd_d16/cyclic/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (warm) / cyclic\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000599999520000384:100]
-set title 'cyclic\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (warm)'
-
-plot "data/freebsd_d16/cyclic_1/bitmapscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_1/bitmapscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_1/bitmapscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_1/bitmapscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_1/bitmapscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'cyclic\_1 / indexscan / eic=1'
-
-plot "data/freebsd_d16/cyclic_1/indexscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_1/indexscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_1/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_1/indexscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_1/indexscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_1 / seqscan / eic=1'
-
-plot "data/freebsd_d16/cyclic_1/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_1/seqscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_1/seqscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_1/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (warm) / cyclic\\_10 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000459999632000294:100]
-set title 'cyclic\_10 / 1 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (warm)'
-
-plot "data/freebsd_d16/cyclic_10/bitmapscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_10/bitmapscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_10/bitmapscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_10/bitmapscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_10/bitmapscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'cyclic\_10 / indexscan / eic=1'
-
-plot "data/freebsd_d16/cyclic_10/indexscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_10/indexscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_10/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_10/indexscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_10/indexscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_10 / seqscan / eic=1'
-
-plot "data/freebsd_d16/cyclic_10/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_10/seqscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_10/seqscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_10/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_10/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (warm) / cyclic\\_25 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000449999640000288:100]
-set title 'cyclic\_25 / 1 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (warm)'
-
-plot "data/freebsd_d16/cyclic_25/bitmapscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_25/bitmapscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_25/bitmapscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_25/bitmapscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_25/bitmapscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'cyclic\_25 / indexscan / eic=1'
-
-plot "data/freebsd_d16/cyclic_25/indexscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_25/indexscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_25/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_25/indexscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_25/indexscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_25 / seqscan / eic=1'
-
-plot "data/freebsd_d16/cyclic_25/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/cyclic_25/seqscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/cyclic_25/seqscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/cyclic_25/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/cyclic_25/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear / eic=1' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
 set title 'linear / 1 / bitmapscan' font 'Verdana Bold,12'
@@ -155,7 +68,7 @@ plot "data/freebsd_d16/linear/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:
      "data/freebsd_d16/linear/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/linear/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000659999472000422:100]
+set xrange[0.000729999416000467:100]
 set title 'linear\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -183,66 +96,8 @@ plot "data/freebsd_d16/linear_1/seqscan/off-1-sync-3-32GB-4-17.data"      using 
      "data/freebsd_d16/linear_1/seqscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/freebsd_d16/linear_1/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/linear_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (warm) / linear\\_10 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000429999656000275:100]
-set title 'linear\_10 / 1 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (warm)'
-
-plot "data/freebsd_d16/linear_10/bitmapscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/linear_10/bitmapscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/linear_10/bitmapscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/linear_10/bitmapscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/linear_10/bitmapscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'linear\_10 / indexscan / eic=1'
-
-plot "data/freebsd_d16/linear_10/indexscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/linear_10/indexscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/linear_10/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/linear_10/indexscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/linear_10/indexscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_10 / seqscan / eic=1'
-
-plot "data/freebsd_d16/linear_10/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/linear_10/seqscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/linear_10/seqscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/linear_10/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/linear_10/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (warm) / linear\\_25 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000379999696000243:100]
-set title 'linear\_25 / 1 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (warm)'
-
-plot "data/freebsd_d16/linear_25/bitmapscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/linear_25/bitmapscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/linear_25/bitmapscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/linear_25/bitmapscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/linear_25/bitmapscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'linear\_25 / indexscan / eic=1'
-
-plot "data/freebsd_d16/linear_25/indexscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/linear_25/indexscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/linear_25/indexscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/linear_25/indexscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/linear_25/indexscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_25 / seqscan / eic=1'
-
-plot "data/freebsd_d16/linear_25/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
-     "data/freebsd_d16/linear_25/seqscan/off-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/freebsd_d16/linear_25/seqscan/off-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/freebsd_d16/linear_25/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/freebsd_d16/linear_25/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / uniform / eic=1' font 'Verdana Bold,12'
-set xrange[0.000759999392000486:100]
+set xrange[0.000789999368000506:100]
 set title 'uniform / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
