@@ -96,7 +96,7 @@ plot "data/freebsd_d16/cyclic_10/seqscan/off-64-sync-3-32GB-4-17.data"      usin
      "data/freebsd_d16/cyclic_10/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000479999616000307:100]
+set xrange[0.000449999640000288:100]
 set title 'cyclic\_25 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
