@@ -10,8 +10,8 @@ set xlabel 'selectivity'
 
 set multiplot layout 4,3 rowsfirst
 set title 'timing (warm) / cyclic\\_10 / eic=0' font 'Verdana Bold,12'
-set xrange[0.000459999632000294:100]
-set yrange[0.01:25041.208]
+set xrange[0.000439999648000282:100]
+set yrange[0.01:6264.447]
 set title 'cyclic\_10 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -40,8 +40,8 @@ plot "data/freebsd_d16/cyclic_10/seqscan/off-0-sync-3-32GB-4-17.data"      using
      "data/freebsd_d16/cyclic_10/seqscan/off-0-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_10 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000459999632000294:100]
-set yrange[0.01:25041.208]
+set xrange[0.000439999648000282:100]
+set yrange[0.01:6264.447]
 set title 'cyclic\_10 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -70,8 +70,8 @@ plot "data/freebsd_d16/cyclic_10/seqscan/off-1-sync-3-32GB-4-17.data"      using
      "data/freebsd_d16/cyclic_10/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_10 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000459999632000294:100]
-set yrange[0.01:25041.208]
+set xrange[0.000439999648000282:100]
+set yrange[0.01:6264.447]
 set title 'cyclic\_10 / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -100,8 +100,8 @@ plot "data/freebsd_d16/cyclic_10/seqscan/off-16-sync-3-32GB-4-17.data"      usin
      "data/freebsd_d16/cyclic_10/seqscan/off-16-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/seqscan/off-16-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_10 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000459999632000294:100]
-set yrange[0.01:25041.208]
+set xrange[0.000439999648000282:100]
+set yrange[0.01:6264.447]
 set title 'cyclic\_10 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
