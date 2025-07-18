@@ -250,7 +250,7 @@ plot "data/ryzen_sata/linear_25/seqscan/off-0-sync-3-32GB-4-17.data"      using 
      "data/ryzen_sata/linear_25/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / uniform / eic=0' font 'Verdana Bold,12'
 set xrange[0.000779999376000499:100]
-set yrange[0:5473.501]
+set yrange[0:8636.425]
 set title 'uniform / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
