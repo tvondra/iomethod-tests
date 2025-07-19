@@ -9,7 +9,7 @@ set xlabel 'selectivity'
 
 set multiplot layout 9,4 rowsfirst
 set title 'timing (cold) / cyclic / eic=64' font 'Verdana Bold,12'
-set xrange[0.1:100]
+set xrange[0.001:100]
 set title 'cyclic / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -45,119 +45,8 @@ plot "data/xeon/cyclic/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with
      "data/xeon/cyclic/seqscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/xeon/cyclic/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/cyclic/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (cold) / cyclic\\_1 / eic=64' font 'Verdana Bold,12'
-set xrange[0.05171:100]
-set title 'cyclic\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (cold)'
-
-plot "data/xeon/cyclic_1/bitmapscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_1/bitmapscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_1/bitmapscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_1/bitmapscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_1/bitmapscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'cyclic\_1 / indexscan / eic=64'
-
-plot "data/xeon/cyclic_1/indexscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_1/indexscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_1/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_1/indexscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_1/indexscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_1 / indexscan prefetch / eic=64'
-
-plot "data/xeon/cyclic_1/indexscan/on-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_1/indexscan/on-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_1/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_1/indexscan/on-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_1/indexscan/on-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_1 / seqscan / eic=64'
-
-plot "data/xeon/cyclic_1/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_1/seqscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_1/seqscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_1/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_1/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (cold) / cyclic\\_10 / eic=64' font 'Verdana Bold,12'
-set xrange[0.05188:100]
-set title 'cyclic\_10 / 64 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (cold)'
-
-plot "data/xeon/cyclic_10/bitmapscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_10/bitmapscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_10/bitmapscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_10/bitmapscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_10/bitmapscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'cyclic\_10 / indexscan / eic=64'
-
-plot "data/xeon/cyclic_10/indexscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_10/indexscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_10/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_10/indexscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_10/indexscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_10 / indexscan prefetch / eic=64'
-
-plot "data/xeon/cyclic_10/indexscan/on-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_10/indexscan/on-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_10/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_10/indexscan/on-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_10/indexscan/on-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_10 / seqscan / eic=64'
-
-plot "data/xeon/cyclic_10/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_10/seqscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_10/seqscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_10/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_10/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (cold) / cyclic\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.05079:100]
-set title 'cyclic\_25 / 64 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (cold)'
-
-plot "data/xeon/cyclic_25/bitmapscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_25/bitmapscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_25/bitmapscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_25/bitmapscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_25/bitmapscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'cyclic\_25 / indexscan / eic=64'
-
-plot "data/xeon/cyclic_25/indexscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_25/indexscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_25/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_25/indexscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_25/indexscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_25 / indexscan prefetch / eic=64'
-
-plot "data/xeon/cyclic_25/indexscan/on-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_25/indexscan/on-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_25/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_25/indexscan/on-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_25/indexscan/on-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'cyclic\_25 / seqscan / eic=64'
-
-plot "data/xeon/cyclic_25/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/cyclic_25/seqscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/cyclic_25/seqscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/cyclic_25/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/cyclic_25/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear / eic=64' font 'Verdana Bold,12'
-set xrange[0.1:100]
+set xrange[0.001:100]
 set title 'linear / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -193,119 +82,8 @@ plot "data/xeon/linear/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with
      "data/xeon/linear/seqscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/xeon/linear/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/xeon/linear/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (cold) / linear\\_1 / eic=64' font 'Verdana Bold,12'
-set xrange[0.06367:100]
-set title 'linear\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (cold)'
-
-plot "data/xeon/linear_1/bitmapscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_1/bitmapscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_1/bitmapscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_1/bitmapscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_1/bitmapscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'linear\_1 / indexscan / eic=64'
-
-plot "data/xeon/linear_1/indexscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_1/indexscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_1/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_1/indexscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_1/indexscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_1 / indexscan prefetch / eic=64'
-
-plot "data/xeon/linear_1/indexscan/on-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_1/indexscan/on-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_1/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_1/indexscan/on-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_1/indexscan/on-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_1 / seqscan / eic=64'
-
-plot "data/xeon/linear_1/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_1/seqscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_1/seqscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_1/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_1/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (cold) / linear\\_10 / eic=64' font 'Verdana Bold,12'
-set xrange[0.05132:100]
-set title 'linear\_10 / 64 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (cold)'
-
-plot "data/xeon/linear_10/bitmapscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_10/bitmapscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_10/bitmapscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_10/bitmapscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_10/bitmapscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'linear\_10 / indexscan / eic=64'
-
-plot "data/xeon/linear_10/indexscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_10/indexscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_10/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_10/indexscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_10/indexscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_10 / indexscan prefetch / eic=64'
-
-plot "data/xeon/linear_10/indexscan/on-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_10/indexscan/on-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_10/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_10/indexscan/on-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_10/indexscan/on-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_10 / seqscan / eic=64'
-
-plot "data/xeon/linear_10/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_10/seqscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_10/seqscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_10/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_10/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-set title 'timing (cold) / linear\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.05061:100]
-set title 'linear\_25 / 64 / bitmapscan' font 'Verdana Bold,12'
-
-set ylabel 'timing (cold)'
-
-plot "data/xeon/linear_25/bitmapscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_25/bitmapscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_25/bitmapscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_25/bitmapscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_25/bitmapscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-unset ylabel
-
-set title 'linear\_25 / indexscan / eic=64'
-
-plot "data/xeon/linear_25/indexscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_25/indexscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_25/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_25/indexscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_25/indexscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_25 / indexscan prefetch / eic=64'
-
-plot "data/xeon/linear_25/indexscan/on-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_25/indexscan/on-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_25/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_25/indexscan/on-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_25/indexscan/on-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
-
-set title 'linear\_25 / seqscan / eic=64'
-
-plot "data/xeon/linear_25/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
-     "data/xeon/linear_25/seqscan/off-64-sync-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
-     "data/xeon/linear_25/seqscan/off-64-io_uring-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
-     "data/xeon/linear_25/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
-     "data/xeon/linear_25/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / uniform / eic=64' font 'Verdana Bold,12'
-set xrange[0.09733:100]
+set xrange[0.00071:100]
 set title 'uniform / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
