@@ -10,7 +10,7 @@ set xlabel 'selectivity'
 set multiplot layout 9,3 rowsfirst
 set title 'timing (cold) / cyclic / eic=1' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0:66018.633]
+set yrange[0:66214.195]
 set title 'cyclic / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -250,7 +250,7 @@ plot "data/ryzen_sata/linear_25/seqscan/off-1-sync-3-32GB-4-17.data"      using 
      "data/ryzen_sata/linear_25/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / uniform / eic=1' font 'Verdana Bold,12'
 set xrange[0.000779999376000499:100]
-set yrange[0:69589.773]
+set yrange[0:71118.429]
 set title 'uniform / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
