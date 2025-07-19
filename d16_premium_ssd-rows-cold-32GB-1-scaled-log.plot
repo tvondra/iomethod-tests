@@ -11,7 +11,7 @@ set xlabel 'selectivity'
 set multiplot layout 9,3 rowsfirst
 set title 'timing (cold) / cyclic / eic=1' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0.01:30908.904]
+set yrange[0.01:32587.221]
 set title 'cyclic / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -41,7 +41,7 @@ plot "data/d16_premium_ssd/cyclic/seqscan/off-1-sync-3-32GB-4-17.data"      usin
      "data/d16_premium_ssd/cyclic/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_1 / eic=1' font 'Verdana Bold,12'
 set xrange[0.000530007420103881:100]
-set yrange[0.01:31490.004]
+set yrange[0.01:31646.686]
 set title 'cyclic\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -191,7 +191,7 @@ plot "data/d16_premium_ssd/linear_1/seqscan/off-1-sync-3-32GB-4-17.data"      us
      "data/d16_premium_ssd/linear_1/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_10 / eic=1' font 'Verdana Bold,12'
 set xrange[0.000459999632000294:100]
-set yrange[0.01:42776.164]
+set yrange[0.01:42988.451]
 set title 'linear\_10 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'

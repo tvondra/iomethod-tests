@@ -11,7 +11,7 @@ set xlabel 'selectivity'
 set multiplot layout 9,3 rowsfirst
 set title 'timing (warm) / cyclic / eic=0' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0.01:3104.722]
+set yrange[0.01:15451.578]
 set title 'cyclic / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -41,7 +41,7 @@ plot "data/d16_premium_ssd/cyclic/seqscan/off-0-sync-3-32GB-4-17.data"      usin
      "data/d16_premium_ssd/cyclic/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_1 / eic=0' font 'Verdana Bold,12'
 set xrange[0.000530007420103881:100]
-set yrange[0.01:4325.596]
+set yrange[0.01:19500.113]
 set title 'cyclic\_1 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -71,7 +71,7 @@ plot "data/d16_premium_ssd/cyclic_1/seqscan/off-0-sync-3-32GB-4-17.data"      us
      "data/d16_premium_ssd/cyclic_1/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_10 / eic=0' font 'Verdana Bold,12'
 set xrange[0.000459999632000294:100]
-set yrange[0.01:7133.194]
+set yrange[0.01:20710.118]
 set title 'cyclic\_10 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -161,7 +161,7 @@ plot "data/d16_premium_ssd/linear/seqscan/off-0-sync-3-32GB-4-17.data"      usin
      "data/d16_premium_ssd/linear/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_1 / eic=0' font 'Verdana Bold,12'
 set xrange[0.00049999960000032:100]
-set yrange[0.01:4410.982]
+set yrange[0.01:19196.666]
 set title 'linear\_1 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -191,7 +191,7 @@ plot "data/d16_premium_ssd/linear_1/seqscan/off-0-sync-3-32GB-4-17.data"      us
      "data/d16_premium_ssd/linear_1/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear\\_10 / eic=0' font 'Verdana Bold,12'
 set xrange[0.000459999632000294:100]
-set yrange[0.01:7147.552]
+set yrange[0.01:20458.85]
 set title 'linear\_10 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
