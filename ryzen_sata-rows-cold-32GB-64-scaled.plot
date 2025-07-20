@@ -40,7 +40,7 @@ plot "data/ryzen_sata/cyclic/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:
      "data/ryzen_sata/cyclic/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_1 / eic=64' font 'Verdana Bold,12'
 set xrange[0.000319999744000205:100]
-set yrange[0:36257.411]
+set yrange[0:36632.05]
 set title 'cyclic\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -159,8 +159,8 @@ plot "data/ryzen_sata/linear/seqscan/off-64-sync-3-32GB-4-17.data"      using 1:
      "data/ryzen_sata/linear/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/ryzen_sata/linear/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_1 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000629999496000403:100]
-set yrange[0:67196.784]
+set xrange[0.000569999544000365:100]
+set yrange[0:67949.737]
 set title 'linear\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -190,7 +190,7 @@ plot "data/ryzen_sata/linear_1/seqscan/off-64-sync-3-32GB-4-17.data"      using 
      "data/ryzen_sata/linear_1/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_10 / eic=64' font 'Verdana Bold,12'
 set xrange[0.000479999616000307:100]
-set yrange[0:68880.178]
+set yrange[0:69136.092]
 set title 'linear\_10 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
