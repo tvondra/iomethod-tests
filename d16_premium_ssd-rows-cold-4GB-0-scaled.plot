@@ -98,6 +98,36 @@ plot "data/d16_premium_ssd/cyclic_10/seqscan/off-0-sync-3-4GB-4-17.data"      us
      "data/d16_premium_ssd/cyclic_10/seqscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/d16_premium_ssd/cyclic_10/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/cyclic_10/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+set title 'timing (cold) / cyclic\\_25 / eic=0' font 'Verdana Bold,12'
+set xrange[0.000370005180072521:100]
+set yrange[0:42584.106]
+set title 'cyclic\_25 / 0 / bitmapscan' font 'Verdana Bold,12'
+
+set ylabel 'timing (cold)'
+
+plot "data/d16_premium_ssd/cyclic_25/bitmapscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/cyclic_25/bitmapscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/cyclic_25/bitmapscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/cyclic_25/bitmapscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/cyclic_25/bitmapscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+unset ylabel
+
+set title 'cyclic\_25 / indexscan / eic=0'
+
+plot "data/d16_premium_ssd/cyclic_25/indexscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/cyclic_25/indexscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/cyclic_25/indexscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/cyclic_25/indexscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/cyclic_25/indexscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'cyclic\_25 / seqscan / eic=0'
+
+plot "data/d16_premium_ssd/cyclic_25/seqscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/cyclic_25/seqscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/cyclic_25/seqscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/cyclic_25/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/cyclic_25/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear / eic=0' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
 set yrange[0:29080.149]
@@ -188,6 +218,36 @@ plot "data/d16_premium_ssd/linear_10/seqscan/off-0-sync-3-4GB-4-17.data"      us
      "data/d16_premium_ssd/linear_10/seqscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/d16_premium_ssd/linear_10/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear_10/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+set title 'timing (cold) / linear\\_25 / eic=0' font 'Verdana Bold,12'
+set xrange[0.000420005880082321:100]
+set yrange[0:42510.687]
+set title 'linear\_25 / 0 / bitmapscan' font 'Verdana Bold,12'
+
+set ylabel 'timing (cold)'
+
+plot "data/d16_premium_ssd/linear_25/bitmapscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/linear_25/bitmapscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/linear_25/bitmapscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/linear_25/bitmapscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/linear_25/bitmapscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+unset ylabel
+
+set title 'linear\_25 / indexscan / eic=0'
+
+plot "data/d16_premium_ssd/linear_25/indexscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/linear_25/indexscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/linear_25/indexscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/linear_25/indexscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/linear_25/indexscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'linear\_25 / seqscan / eic=0'
+
+plot "data/d16_premium_ssd/linear_25/seqscan/off-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/linear_25/seqscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/linear_25/seqscan/off-0-io_uring-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/linear_25/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/linear_25/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / uniform / eic=0' font 'Verdana Bold,12'
 set xrange[0.000730010220143082:100]
 set yrange[0:57570.368]

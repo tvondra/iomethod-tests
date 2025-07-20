@@ -97,7 +97,7 @@ plot "data/d16_premium_ssd/cyclic_10/seqscan/off-64-sync-3-32GB-4-17.data"      
      "data/d16_premium_ssd/cyclic_10/seqscan/off-64-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/cyclic_10/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000410005740080361:100]
+set xrange[0.000370005180072521:100]
 set title 'cyclic\_25 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
