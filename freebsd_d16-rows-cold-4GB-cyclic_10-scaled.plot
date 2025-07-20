@@ -1,4 +1,4 @@
-set terminal pdfcairo size 16,16 enhanced font 'Verdana,12'
+set terminal pdfcairo size 21,16 enhanced font 'Verdana,12'
 set output 'freebsd_d16-rows-cold-4GB-cyclic_10-scaled.pdf'
 
 set log x
@@ -7,7 +7,7 @@ set key top left
 
 set xlabel 'selectivity'
 
-set multiplot layout 4,3 rowsfirst
+set multiplot layout 4,4 rowsfirst
 set title 'timing (cold) / cyclic\\_10 / eic=0' font 'Verdana Bold,12'
 set xrange[0.000429999656000275:100]
 set yrange[0:33741.889]
@@ -28,6 +28,13 @@ plot "data/freebsd_d16/cyclic_10/indexscan/off-0-sync-3-4GB-4-17.data"      usin
      "data/freebsd_d16/cyclic_10/indexscan/off-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
      "data/freebsd_d16/cyclic_10/indexscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/indexscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'cyclic\_10 / indexscan prefetch / eic=0'
+
+plot "data/freebsd_d16/cyclic_10/indexscan/on-0-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-0-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'cyclic\_10 / seqscan / eic=0'
 
@@ -56,6 +63,13 @@ plot "data/freebsd_d16/cyclic_10/indexscan/off-1-sync-3-4GB-4-17.data"      usin
      "data/freebsd_d16/cyclic_10/indexscan/off-1-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/indexscan/off-1-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 
+set title 'cyclic\_10 / indexscan prefetch / eic=1'
+
+plot "data/freebsd_d16/cyclic_10/indexscan/on-1-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-1-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-1-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-1-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
 set title 'cyclic\_10 / seqscan / eic=1'
 
 plot "data/freebsd_d16/cyclic_10/seqscan/off-1-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
@@ -83,6 +97,13 @@ plot "data/freebsd_d16/cyclic_10/indexscan/off-16-sync-3-4GB-4-17.data"      usi
      "data/freebsd_d16/cyclic_10/indexscan/off-16-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/indexscan/off-16-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 
+set title 'cyclic\_10 / indexscan prefetch / eic=16'
+
+plot "data/freebsd_d16/cyclic_10/indexscan/on-16-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-16-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-16-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-16-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
 set title 'cyclic\_10 / seqscan / eic=16'
 
 plot "data/freebsd_d16/cyclic_10/seqscan/off-16-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
@@ -109,6 +130,13 @@ plot "data/freebsd_d16/cyclic_10/indexscan/off-64-sync-3-4GB-4-17.data"      usi
      "data/freebsd_d16/cyclic_10/indexscan/off-64-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
      "data/freebsd_d16/cyclic_10/indexscan/off-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/indexscan/off-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'cyclic\_10 / indexscan prefetch / eic=64'
+
+plot "data/freebsd_d16/cyclic_10/indexscan/on-64-sync-3-4GB-4-17.data"      using 1:3 with points pt 7 ps 0.75 title "17", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-64-sync-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-64-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/freebsd_d16/cyclic_10/indexscan/on-64-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'cyclic\_10 / seqscan / eic=64'
 

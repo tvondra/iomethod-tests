@@ -16,6 +16,13 @@ plot "data/MACHINE/DATASET/indexscan/off-EIC-sync-3-BUFFERS-4-17.data"      usin
      "data/MACHINE/DATASET/indexscan/off-EIC-worker-3-BUFFERS-4-18.data"      using X:Y with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/MACHINE/DATASET/indexscan/off-EIC-worker-12-BUFFERS-4-18.data"      using X:Y with points pt 7 ps 0.75 title "18 / worker (12)"
 
+set title 'DS / indexscan prefetch / eic=EIC'
+
+plot "data/MACHINE/DATASET/indexscan/on-EIC-sync-3-BUFFERS-4-17.data"      using X:Y with points pt 7 ps 0.75 title "17", \
+     "data/MACHINE/DATASET/indexscan/on-EIC-sync-3-BUFFERS-4-18.data"      using X:Y with points pt 7 ps 0.75 title "18 / sync", \
+     "data/MACHINE/DATASET/indexscan/on-EIC-worker-3-BUFFERS-4-18.data"      using X:Y with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/MACHINE/DATASET/indexscan/on-EIC-worker-12-BUFFERS-4-18.data"      using X:Y with points pt 7 ps 0.75 title "18 / worker (12)"
+
 set title 'DS / seqscan / eic=EIC'
 
 plot "data/MACHINE/DATASET/seqscan/off-EIC-sync-3-BUFFERS-4-17.data"      using X:Y with points pt 7 ps 0.75 title "17", \
