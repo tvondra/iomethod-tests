@@ -101,7 +101,7 @@ plot "data/ryzen_sata/cyclic_10/seqscan/off-64-sync-3-32GB-4-17.data"      using
      "data/ryzen_sata/cyclic_10/seqscan/off-64-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / cyclic\\_25 / eic=64' font 'Verdana Bold,12'
 set xrange[0.000379999696000243:100]
-set yrange[0.01:4160.365]
+set yrange[0.01:5715.86]
 set title 'cyclic\_25 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
