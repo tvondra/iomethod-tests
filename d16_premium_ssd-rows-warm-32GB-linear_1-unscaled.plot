@@ -1,4 +1,4 @@
-set terminal pdfcairo size 16,16 enhanced font 'Verdana,12'
+set terminal pdfcairo size 21,16 enhanced font 'Verdana,12'
 set output 'd16_premium_ssd-rows-warm-32GB-linear_1-unscaled.pdf'
 
 set log x
@@ -7,7 +7,7 @@ set key top left
 
 set xlabel 'selectivity'
 
-set multiplot layout 4,3 rowsfirst
+set multiplot layout 4,4 rowsfirst
 set title 'timing (warm) / linear\\_1 / eic=0' font 'Verdana Bold,12'
 set xrange[0.00049999960000032:100]
 set title 'linear\_1 / 0 / bitmapscan' font 'Verdana Bold,12'
@@ -29,6 +29,14 @@ plot "data/d16_premium_ssd/linear_1/indexscan/off-0-sync-3-32GB-4-17.data"      
      "data/d16_premium_ssd/linear_1/indexscan/off-0-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/d16_premium_ssd/linear_1/indexscan/off-0-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear_1/indexscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'linear\_1 / indexscan prefetch / eic=0'
+
+plot "data/d16_premium_ssd/linear_1/indexscan/on-0-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-0-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-0-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-0-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'linear\_1 / seqscan / eic=0'
 
@@ -59,6 +67,14 @@ plot "data/d16_premium_ssd/linear_1/indexscan/off-1-sync-3-32GB-4-17.data"      
      "data/d16_premium_ssd/linear_1/indexscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear_1/indexscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
+set title 'linear\_1 / indexscan prefetch / eic=1'
+
+plot "data/d16_premium_ssd/linear_1/indexscan/on-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-1-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-1-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
+
 set title 'linear\_1 / seqscan / eic=1'
 
 plot "data/d16_premium_ssd/linear_1/seqscan/off-1-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
@@ -88,6 +104,14 @@ plot "data/d16_premium_ssd/linear_1/indexscan/off-16-sync-3-32GB-4-17.data"     
      "data/d16_premium_ssd/linear_1/indexscan/off-16-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear_1/indexscan/off-16-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
+set title 'linear\_1 / indexscan prefetch / eic=16'
+
+plot "data/d16_premium_ssd/linear_1/indexscan/on-16-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-16-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-16-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-16-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-16-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
+
 set title 'linear\_1 / seqscan / eic=16'
 
 plot "data/d16_premium_ssd/linear_1/seqscan/off-16-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
@@ -116,6 +140,14 @@ plot "data/d16_premium_ssd/linear_1/indexscan/off-64-sync-3-32GB-4-17.data"     
      "data/d16_premium_ssd/linear_1/indexscan/off-64-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
      "data/d16_premium_ssd/linear_1/indexscan/off-64-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/d16_premium_ssd/linear_1/indexscan/off-64-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
+
+set title 'linear\_1 / indexscan prefetch / eic=64'
+
+plot "data/d16_premium_ssd/linear_1/indexscan/on-64-sync-3-32GB-4-17.data"      using 1:4 with points pt 7 ps 0.75 title "17", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-64-sync-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / sync", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-64-io_uring-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / io\\_uring", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-64-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
+     "data/d16_premium_ssd/linear_1/indexscan/on-64-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 
 set title 'linear\_1 / seqscan / eic=64'
 

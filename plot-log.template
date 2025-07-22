@@ -1,4 +1,4 @@
-set terminal pdfcairo size 16,16 enhanced font 'Verdana,12'
+set terminal pdfcairo size 21,16 enhanced font 'Verdana,12'
 set output 'MACHINE-SEL-CACHE-BUFFERS-DATASET-SCALE-log.pdf'
 
 set log x
@@ -8,4 +8,4 @@ set key bottom right
 
 set xlabel 'selectivity'
 
-set multiplot layout 4,3 rowsfirst
+set multiplot layout 4,4 rowsfirst

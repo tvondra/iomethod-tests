@@ -1,4 +1,4 @@
-set terminal pdfcairo size 16,36 enhanced font 'Verdana,12'
+set terminal pdfcairo size 21,36 enhanced font 'Verdana,12'
 set output 'MACHINE-SEL-CACHE-BUFFERS-EIC-SCALE.pdf'
 
 set log x
@@ -7,4 +7,4 @@ set key top left
 
 set xlabel 'selectivity'
 
-set multiplot layout 9,3 rowsfirst
+set multiplot layout 9,4 rowsfirst
