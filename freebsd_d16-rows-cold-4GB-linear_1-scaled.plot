@@ -9,8 +9,8 @@ set xlabel 'selectivity'
 
 set multiplot layout 4,4 rowsfirst
 set title 'timing (cold) / linear\\_1 / eic=0' font 'Verdana Bold,12'
-set xrange[0.000509999592000326:100]
-set yrange[0:27614.561]
+set xrange[0.00049999960000032:100]
+set yrange[0:26750.389]
 set title 'linear\_1 / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -43,8 +43,8 @@ plot "data/freebsd_d16/linear_1/seqscan/off-0-sync-3-4GB-4-17.data"      using 1
      "data/freebsd_d16/linear_1/seqscan/off-0-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/linear_1/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000509999592000326:100]
-set yrange[0:27614.561]
+set xrange[0.00049999960000032:100]
+set yrange[0:26750.389]
 set title 'linear\_1 / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -77,8 +77,8 @@ plot "data/freebsd_d16/linear_1/seqscan/off-1-sync-3-4GB-4-17.data"      using 1
      "data/freebsd_d16/linear_1/seqscan/off-1-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/linear_1/seqscan/off-1-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_1 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000509999592000326:100]
-set yrange[0:27614.561]
+set xrange[0.00049999960000032:100]
+set yrange[0:26750.389]
 set title 'linear\_1 / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -111,8 +111,8 @@ plot "data/freebsd_d16/linear_1/seqscan/off-16-sync-3-4GB-4-17.data"      using 
      "data/freebsd_d16/linear_1/seqscan/off-16-worker-3-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/linear_1/seqscan/off-16-worker-12-4GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_1 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000509999592000326:100]
-set yrange[0:27614.561]
+set xrange[0.00049999960000032:100]
+set yrange[0:26750.389]
 set title 'linear\_1 / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'

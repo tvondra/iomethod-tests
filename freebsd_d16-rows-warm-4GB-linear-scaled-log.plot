@@ -11,7 +11,7 @@ set xlabel 'selectivity'
 set multiplot layout 4,4 rowsfirst
 set title 'timing (warm) / linear / eic=0' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0.01:5321.734]
+set yrange[0.01:3216.104]
 set title 'linear / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -45,7 +45,7 @@ plot "data/freebsd_d16/linear/seqscan/off-0-sync-3-4GB-4-17.data"      using 1:4
      "data/freebsd_d16/linear/seqscan/off-0-worker-12-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear / eic=1' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0.01:5321.734]
+set yrange[0.01:3216.104]
 set title 'linear / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -79,7 +79,7 @@ plot "data/freebsd_d16/linear/seqscan/off-1-sync-3-4GB-4-17.data"      using 1:4
      "data/freebsd_d16/linear/seqscan/off-1-worker-12-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear / eic=16' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0.01:5321.734]
+set yrange[0.01:3216.104]
 set title 'linear / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -113,7 +113,7 @@ plot "data/freebsd_d16/linear/seqscan/off-16-sync-3-4GB-4-17.data"      using 1:
      "data/freebsd_d16/linear/seqscan/off-16-worker-12-4GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / linear / eic=64' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0.01:5321.734]
+set yrange[0.01:3216.104]
 set title 'linear / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'

@@ -9,8 +9,8 @@ set xlabel 'selectivity'
 
 set multiplot layout 4,4 rowsfirst
 set title 'timing (warm) / uniform / eic=0' font 'Verdana Bold,12'
-set xrange[0.000789999368000506:100]
-set yrange[0:43482.937]
+set xrange[0.000739999408000474:100]
+set yrange[0:43128.293]
 set title 'uniform / 0 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -43,8 +43,8 @@ plot "data/freebsd_d16/uniform/seqscan/off-0-sync-3-32GB-4-17.data"      using 1
      "data/freebsd_d16/uniform/seqscan/off-0-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/uniform/seqscan/off-0-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / uniform / eic=1' font 'Verdana Bold,12'
-set xrange[0.000789999368000506:100]
-set yrange[0:43482.937]
+set xrange[0.000739999408000474:100]
+set yrange[0:43128.293]
 set title 'uniform / 1 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -77,8 +77,8 @@ plot "data/freebsd_d16/uniform/seqscan/off-1-sync-3-32GB-4-17.data"      using 1
      "data/freebsd_d16/uniform/seqscan/off-1-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/uniform/seqscan/off-1-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / uniform / eic=16' font 'Verdana Bold,12'
-set xrange[0.000789999368000506:100]
-set yrange[0:43482.937]
+set xrange[0.000739999408000474:100]
+set yrange[0:43128.293]
 set title 'uniform / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
@@ -111,8 +111,8 @@ plot "data/freebsd_d16/uniform/seqscan/off-16-sync-3-32GB-4-17.data"      using 
      "data/freebsd_d16/uniform/seqscan/off-16-worker-3-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/uniform/seqscan/off-16-worker-12-32GB-4-18.data"      using 1:4 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (warm) / uniform / eic=64' font 'Verdana Bold,12'
-set xrange[0.000789999368000506:100]
-set yrange[0:43482.937]
+set xrange[0.000739999408000474:100]
+set yrange[0:43128.293]
 set title 'uniform / 64 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (warm)'
