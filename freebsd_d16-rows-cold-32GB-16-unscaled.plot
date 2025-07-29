@@ -108,7 +108,7 @@ plot "data/freebsd_d16/cyclic_10/seqscan/off-16-sync-3-32GB-4-17.data"      usin
      "data/freebsd_d16/cyclic_10/seqscan/off-16-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/cyclic_10/seqscan/off-16-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / cyclic\\_25 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000429999656000275:100]
+set xrange[0.000419999664000269:100]
 set title 'cyclic\_25 / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
@@ -207,7 +207,7 @@ plot "data/freebsd_d16/linear_1/seqscan/off-16-sync-3-32GB-4-17.data"      using
      "data/freebsd_d16/linear_1/seqscan/off-16-worker-3-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (3)", \
      "data/freebsd_d16/linear_1/seqscan/off-16-worker-12-32GB-4-18.data"      using 1:3 with points pt 7 ps 0.75 title "18 / worker (12)"
 set title 'timing (cold) / linear\\_10 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000519999584000333:100]
+set xrange[0.00049999960000032:100]
 set title 'linear\_10 / 16 / bitmapscan' font 'Verdana Bold,12'
 
 set ylabel 'timing (cold)'
